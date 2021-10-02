@@ -1,0 +1,23 @@
+body {
+  background-color: navy;
+  margin-left: 2rem;
+}
+h1 {
+  font-size: 5rem;
+  color: turquoise;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+p {
+  font-size: 2rem;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+footer {
+  color: yellow;
+  padding-top: 4rem;
+}

@@ -5,3 +5,6 @@
 
 <b> Reflections and Comments</b>
 * This is my first time using GitHub, JavaScript, CSS and HTML.  As my first time, this was challenging.  The most challenging items were:
+* - Learning and using CSS Styles like padding and margin
+* - Using Git and GitHub commands like add, commmit and push
+* - Making the logic questions work in. JavaScript

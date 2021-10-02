@@ -1,6 +1,6 @@
 # Lab-02
 ## Project name: About-me
-*
+
 ### Objective : My firsy app using HTML, CSS and Javascript to describe who I am.
 *
 * Reflections and Comments

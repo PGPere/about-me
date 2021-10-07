@@ -23,16 +23,19 @@ function QuestionOne(){
 }
 QuestionOne();
 
-let userAnswer2 = prompt('Do I like riding bycles? Yes or No?').toLowerCase();
+function QuestionTwo(){
+  let userAnswer2 = prompt('Do I like riding bycles? Yes or No?').toLowerCase();
 
-if (userAnswer2 ==='yes' || userAnswer2 ==='y') {
-/*console.log ('You answered correctly!'*/
-  alert('You answered correctly!')
-  score = score + 1
-} else {
-  /*console.log ('Sorry, that is incorrect')*/
-  alert('Sorry, that is incorrect')
-  }
+  if (userAnswer2 ==='yes' || userAnswer2 ==='y') {
+  /*console.log ('You answered correctly!'*/
+    alert('You answered correctly!')
+    score = score + 1
+  } else {
+    /*console.log ('Sorry, that is incorrect')*/
+    alert('Sorry, that is incorrect')
+    }
+}
+QuestionTwo();
 
 let userAnswer3 = prompt('Do I like sky dving? Yes or No?').toLowerCase();
 

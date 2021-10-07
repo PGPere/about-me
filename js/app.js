@@ -112,37 +112,40 @@ function QuestionSix(){
 }
 QuestionSix();
 
-/* This next session is adding a 7th Question per Lab 03 assignment*/
+function QuestionSeven(){
+  /* This next session is adding a 7th Question per Lab 03 assignment*/
 
-alert ('Lets play a game. I have three favorite cities on the West Coast. Guess one of them and you win this game.');
+  alert ('Lets play a game. I have three favorite cities on the West Coast. Guess one of them and you win this game.');
 
-let secretCities = ['PORTLAND', 'SAN DIEGO', 'SAN FRANCISCO'];
-// console.log (secretCities)
+  let secretCities = ['PORTLAND', 'SAN DIEGO', 'SAN FRANCISCO'];
+  // console.log (secretCities)
 
-let attemptsLeft1 = 6;
+  let attemptsLeft1 = 6;
 
-do {
-if (attemptsLeft1 == 6) {
-alert ('Please enter your first guess of a West Coast city at the next prompt');
-} else {
-alert ('Sorry, try again. You have ' + attemptsLeft1+ ' attempts left. Please enter guess at the next prompt');
+  do {
+  if (attemptsLeft1 == 6) {
+  alert ('Please enter your first guess of a West Coast city at the next prompt');
+  } else {
+  alert ('Sorry, try again. You have ' + attemptsLeft1+ ' attempts left. Please enter guess at the next prompt');
+  }
+  let userAnswer = prompt("Enter").toUpperCase();
+
+  for (let i=0; i < secretCities.length; i++) {
+  if (userAnswer == secretCities[i]) {
+    alert ('You guessed one of the cities, You won !');
+    score = score + 1 
+    attemptsLeft1 = 0;
+  }
+  }
+  // console.log (`${attemptsLeft - 1}`);
+  attemptsLeft1--; 
+  }
+  while (attemptsLeft1 > 0);
+  alert ('My favorite West Coast cities are ' + secretCities);
+
+    /* next lines shows total score and says good bye to site visitor*/
 }
-let userAnswer = prompt("Enter").toUpperCase();
-
-for (let i=0; i < secretCities.length; i++) {
-if (userAnswer == secretCities[i]) {
-  alert ('You guessed one of the cities, You won !');
-  score = score + 1 
-  attemptsLeft1 = 0;
-}
-}
-// console.log (`${attemptsLeft - 1}`);
-attemptsLeft1--; 
-}
-while (attemptsLeft1 > 0);
-alert ('My favorite West Coast cities are ' + secretCities);
-
-  /* next lines shows total score and says good bye to site visitor*/
+QuestionSeven();
 
 alert(user + ' your score is '+ score + ' out of 7')  
 alert('Thank you '+ user + ' for visiting my site!')

@@ -65,48 +65,51 @@ function QuestionFour(){
 }
 QuestionFour();
 
+function QuestionFive(){
+  let userAnswer5 = prompt('Was my family originally from Cuba? Yes or No?').toLowerCase();
 
-let userAnswer5 = prompt('Was my family originally from Cuba? Yes or No?').toLowerCase();
-
-if (userAnswer5 ==='yes' || userAnswer5 ==='y') {
-/*console.log ('You answered correctly!'*/
-  alert('You answered correctly!')
-  score = score + 1
-} else {
-  /*console.log ('Sorry, that is incorrect')*/
-  alert('Sorry, that is incorrect')
-  }
-
-/* This session is adding a 6th Question per Lab 03 assignment*/
-
-alert('We are now going to play a guessing number game.')
-
-// /*next lines are to ask the site visitor to guess a number*/
-
-let secretNumber = 6;
-
-let attemptsLeft = 4;
-
-do {
-let userAnswer = parseInt(prompt('Please enter your guess of the number (Hint- # is between 0 an 10)',"0",10));
-// console.log (userAnswer);
-
-if (userAnswer == secretNumber) {
-  alert ('You guessed the number correctly!')
-  score = score + 1 
-  attemptsLeft = 0;
-} else {
-  if (userAnswer < secretNumber) {
-  alert ('Sorry, your guess is too low!')
+  if (userAnswer5 ==='yes' || userAnswer5 ==='y') {
+  /*console.log ('You answered correctly!'*/
+    alert('You answered correctly!')
+    score = score + 1
   } else {
-  alert ('Sorry, your guess is too high!')
-  }
-console.log(`${attemptsLeft - 1}`);
-    attemptsLeft--;
-  }
-} while (attemptsLeft > 0);
-alert ('The secret number is ' + secretNumber);
+    /*console.log ('Sorry, that is incorrect')*/
+    alert('Sorry, that is incorrect')
+    }
+}
+QuestionFive();
 
+function QuestionSix(){
+  /* This session is adding a 6th Question per Lab 03 assignment*/
+
+  alert('We are now going to play a guessing number game.')
+
+  // /*next lines are to ask the site visitor to guess a number*/
+
+  let secretNumber = 6;
+
+  let attemptsLeft = 4;
+
+  do {
+  let userAnswer = parseInt(prompt('Please enter your guess of the number (Hint- # is between 0 an 10)',"0",10));
+  // console.log (userAnswer);
+
+  if (userAnswer == secretNumber) {
+    alert ('You guessed the number correctly!')
+    score = score + 1 
+    attemptsLeft = 0;
+  } else {
+    if (userAnswer < secretNumber) {
+    alert ('Sorry, your guess is too low!')
+    } else {
+    alert ('Sorry, your guess is too high!')
+    }
+  console.log(`${attemptsLeft - 1}`);
+      attemptsLeft--;
+    }
+  } while (attemptsLeft > 0);
+  alert ('The secret number is ' + secretNumber);
+}
 /* This next session is adding a 7th Question per Lab 03 assignment*/
 
 alert ('Lets play a game. I have three favorite cities on the West Coast. Guess one of them and you win this game.');

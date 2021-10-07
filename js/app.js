@@ -110,6 +110,8 @@ function QuestionSix(){
   } while (attemptsLeft > 0);
   alert ('The secret number is ' + secretNumber);
 }
+QuestionSix();
+
 /* This next session is adding a 7th Question per Lab 03 assignment*/
 
 alert ('Lets play a game. I have three favorite cities on the West Coast. Guess one of them and you win this game.');

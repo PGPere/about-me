@@ -37,17 +37,21 @@ function QuestionTwo(){
 }
 QuestionTwo();
 
-let userAnswer3 = prompt('Do I like sky dving? Yes or No?').toLowerCase();
+function QuestionThree(){
+  let userAnswer3 = prompt('Do I like sky dving? Yes or No?').toLowerCase();
 
-if (userAnswer3 ==='no' || userAnswer3 ==='n') {
-/*console.log ('You answered correctly!'*/
-  alert('You answered correctly!')
-  score = score + 1
-} else {
-  /*console.log ('Sorry, that is incorrect')*/
-  alert('Sorry, that is incorrect')
-  }
+  if (userAnswer3 ==='no' || userAnswer3 ==='n') {
+  /*console.log ('You answered correctly!'*/
+    alert('You answered correctly!')
+    score = score + 1
+  } else {
+    /*console.log ('Sorry, that is incorrect')*/
+    alert('Sorry, that is incorrect')
+    }
+}
+QuestionThree();
 
+function QuestionFour(){
 let userAnswer4 = prompt('Do I like hunting? Yes or No?').toLowerCase();
 
 if (userAnswer4 ==='no' || userAnswer4 ==='n') {

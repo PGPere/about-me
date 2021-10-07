@@ -52,16 +52,19 @@ function QuestionThree(){
 QuestionThree();
 
 function QuestionFour(){
-let userAnswer4 = prompt('Do I like hunting? Yes or No?').toLowerCase();
+  let userAnswer4 = prompt('Do I like hunting? Yes or No?').toLowerCase();
 
-if (userAnswer4 ==='no' || userAnswer4 ==='n') {
-/*console.log ('You answered correctly!'*/
-  alert('You answered correctly!')
-  score = score + 1
-} else {
-  /*console.log ('Sorry, that is incorrect')*/
-  alert('Sorry, that is incorrect')
-  }
+  if (userAnswer4 ==='no' || userAnswer4 ==='n') {
+  /*console.log ('You answered correctly!'*/
+    alert('You answered correctly!')
+    score = score + 1
+  } else {
+    /*console.log ('Sorry, that is incorrect')*/
+    alert('Sorry, that is incorrect')
+    }
+}
+QuestionFour();
+
 
 let userAnswer5 = prompt('Was my family originally from Cuba? Yes or No?').toLowerCase();
 

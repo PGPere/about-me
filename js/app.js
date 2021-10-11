@@ -13,11 +13,9 @@ function QuestionOne(){
   let userAnswer1 = prompt('Do I like beer? Yes or No?').toLowerCase();
 
   if (userAnswer1 ==='yes' || userAnswer1 ==='y') {
-  /*console.log ('You answered correctly!'*/
     alert('You answered correctly!')
     score = score + 1
   } else {
-    /*console.log ('Sorry, that is incorrect')*/
     alert('Sorry, that is incorrect')
     }
 }
@@ -27,11 +25,9 @@ function QuestionTwo(){
   let userAnswer2 = prompt('Do I like riding bycles? Yes or No?').toLowerCase();
 
   if (userAnswer2 ==='yes' || userAnswer2 ==='y') {
-  /*console.log ('You answered correctly!'*/
     alert('You answered correctly!')
     score = score + 1
   } else {
-    /*console.log ('Sorry, that is incorrect')*/
     alert('Sorry, that is incorrect')
     }
 }
@@ -41,11 +37,9 @@ function QuestionThree(){
   let userAnswer3 = prompt('Do I like sky dving? Yes or No?').toLowerCase();
 
   if (userAnswer3 ==='no' || userAnswer3 ==='n') {
-  /*console.log ('You answered correctly!'*/
     alert('You answered correctly!')
     score = score + 1
   } else {
-    /*console.log ('Sorry, that is incorrect')*/
     alert('Sorry, that is incorrect')
     }
 }
@@ -55,11 +49,9 @@ function QuestionFour(){
   let userAnswer4 = prompt('Do I like hunting? Yes or No?').toLowerCase();
 
   if (userAnswer4 ==='no' || userAnswer4 ==='n') {
-  /*console.log ('You answered correctly!'*/
     alert('You answered correctly!')
     score = score + 1
   } else {
-    /*console.log ('Sorry, that is incorrect')*/
     alert('Sorry, that is incorrect')
     }
 }
@@ -69,11 +61,9 @@ function QuestionFive(){
   let userAnswer5 = prompt('Was my family originally from Cuba? Yes or No?').toLowerCase();
 
   if (userAnswer5 ==='yes' || userAnswer5 ==='y') {
-  /*console.log ('You answered correctly!'*/
     alert('You answered correctly!')
     score = score + 1
   } else {
-    /*console.log ('Sorry, that is incorrect')*/
     alert('Sorry, that is incorrect')
     }
 }
@@ -92,8 +82,6 @@ function QuestionSix(){
 
   do {
   let userAnswer = parseInt(prompt('Please enter your guess of the number (Hint- # is between 0 an 10)',"0",10));
-  // console.log (userAnswer);
-
   if (userAnswer == secretNumber) {
     alert ('You guessed the number correctly!')
     score = score + 1 
@@ -117,11 +105,8 @@ function QuestionSeven(){
 
   alert ('Lets play a game. I have three favorite cities on the West Coast. Guess one of them and you win this game.');
 
-  let secretCities = ['PORTLAND', 'SAN DIEGO', 'SAN FRANCISCO'];
-  // console.log (secretCities)
-
+  let secretCities = ['PORTLAND', 'SAN DIEGO', 'SAN FRANCISCO']
   let attemptsLeft1 = 6;
-
   do {
   if (attemptsLeft1 == 6) {
   alert ('Please enter your first guess of a West Coast city at the next prompt');
@@ -137,7 +122,6 @@ function QuestionSeven(){
     attemptsLeft1 = 0;
   }
   }
-  // console.log (`${attemptsLeft - 1}`);
   attemptsLeft1--; 
   }
   while (attemptsLeft1 > 0);
